@@ -312,11 +312,10 @@ html,body {
 	font-size:26px;
 }
 
-
 /* 일부 네비게이션 */
 .mainNav{
 	position:absolute;
-	bottom:175px;
+	top:742px;
 	left:344px;
 	width:864px;
 	height:30px;

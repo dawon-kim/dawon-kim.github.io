@@ -1,0 +1,7 @@
+.hideme{
+  width:100px;
+  height:200px;
+  background-color:red;
+  margin-top:100px;
+  opacity:0;
+}

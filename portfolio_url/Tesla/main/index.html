@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title> 테슬라 웹 사이트 </title>   
+
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css'>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="css/DB_tab25.css" type="text/css"/>
+   <link rel="stylesheet" href="css/reset.css" /> 
+   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+   <link rel="stylesheet" href="css/style.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css'>
+   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+   <link rel="styleshee"' href="css/font-awesome.min.css">
+
+
+   <!--스와이퍼를 덮어써야하기 때문에 스타일.css 링크를 꼭 하단에 작성해줘야한다.-->
+   <!--js파일과 css 파일 가지고 와줘야함.-->
+
+   <!-- 제이커리 스크립트 파일이 가장 상단에 작성되어야 한다.모든 제이커리 소스들이 적용되게 해주는 것. 제이커리 사ㅇㅣ트에서 다운받음 -->
+  <!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>-->
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+   <script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript" src="js/top.js"></script>
+   <script type="text/javascript" src="js/scroll.js"></script>
+
+    <style>
+      ul,li{margin:0;padding:0;list-style:none}
+      img{border:0;vertical-align:top}
+      *{font-family: 'Noto Sans KR', sans-serif;}
+   </style>
+
+</head>
+<body>
+   <div id="wrap">
+
+<div class="headerWrap">
+         <header>
+            <h1>
+               <a href="index.html">
+                  <img src="img/header/logo.png" alt=""/>
+               </a>
+            </h1>
+
+            <nav>
+               <ul>
+
+               
+                  <li>
+                     <a href="../sub_model/index.html">
+                       <img src="img/header/model.png" alt=""/>
+                  </a>
+                  </li>
+
+                
+                  <li>
+                     <a href="../sub_T-drive/index.html">
+                      <img src="img/header/T-drive.png" alt=""/>
+                  </a>
+                  </li>
+
+                  <li>
+                     <a href="../sub_energy/index.html">
+                        <img src="img/header/energy.png" alt=""/>
+                    </a>
+                  </li>
+               
+                  <li>
+                     <a href="../sub_tesla/index.html">
+                        <img src="img/header/tesla.png" alt=""/>
+                     </a>
+                  </li>
+
+               </ul>
+
+            </nav>
+
+            <h2 calss="manu_bar">
+               <img src="img/header/menu_bar.png" alt=""/>
+            </h2>
+         </header>
+</div>
+
+<!------------------------------------------------->
+
+   <!-- main visual -->
+	
+			<div id="visualWrap">
+					<div class="mainVisual">
+                  <img class="mainBg" src="img/main/background.gif" data-aos="" alt=""/>
+					   <h1><img src="img/main/main_modelx.png" alt="" data-aos="fade"/></h1>
+					   <h2><img src="img/main/main_utility.png" alt="" data-aos="fade"/></h2>
+                  <h3><img src="img/main/main_Infor.png" alt="" data-aos="fade"/></h3>
+
+                     <!--aroow-button-->
+
+               <img class="mainCar" src="img/main/main_car.png" alt="" data-aos="fade-left"/>
+                     
+
+              
+               <div class="scroll-button" id="arrow-button">
+                  <a class="button" style="background-color: inherit;">
+                      <span class="icon"><i class="fa  fa-angle-double-down"></i></span>
+                  </a>
+              </div><!-- 버튼 끝-->
+
+            </div> 
+         </div>  <!-- main visual -->
+
+
+      <!-- car con-->
+      <div id="carWrap">
+         <div class="carCon">
+            <!-- Swiper -->
+   <div class="containerWrap">
+      <div class="swiper-container" data-aos="fade-down">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide"></div>
+         <div class="swiper-slide"></div>
+         <div class="swiper-slide"></div>
+         <div class="swiper-slide"></div>
+         <div class="swiper-slide"></div>
+         <div class="swiper-slide"></div>
+         <div class="swiper-slide"></div>
+     </div>
+   </div>
+     
+   </div>
+ 
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+   <!-- Initialize Swiper -->
+   
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper('.swiper-container', {
+       slidesPerView: 1,
+       spaceBetween: 10,
+      speed:1000,
+       // init: false,
+       pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+       },
+       autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        
+      },
+       breakpoints: {
+         '@0.00': {
+           slidesPerView: 1,
+           spaceBetween: 10,
+         },
+         '@0.75': {
+           slidesPerView: 2,
+           spaceBetween: 20,
+         },
+         '@1.00': {
+           slidesPerView: 3,
+           spaceBetween: 40,
+         },
+         '@1.50': {
+           slidesPerView: 4,
+           spaceBetween: 50,
+         },
+       }
+     });
+   </script>
+
+            <div class="moreRedButton">
+                  <a href="../sub_model/index.html"><img src="img/button/moreViewRed.png" alt=""/>
+                  </a>
+            </div>
+            <div class="Black360Button">
+               <a href="../sub_model/index.html"><img src="img/button/360Black.png" alt=""/>
+               </a>
+         </div>
+
+         </div>
+
+
+      </div><!--car-->
+
+      <!-- energy con-->
+      <div id="energyWrap">
+         <div class="energyCon wow fadeindown" data-aos="fade-down">
+            <img src="img/main/energyContents.jpg" alt=""/>
+            <span>
+               <a href="../sub_energy/index.html">
+                  <img src="img/button/moreViewArrow.png" alt=""/>
+               </a>
+            </span>
+         </div><!--car-->
+      </div><!--energy-->
+
+      <!-- news and drive-->
+      <div id="newsDriveWrap">
+
+         <div class="newsDriveCon" data-aos="fade-down">
+            <img class="newsTximg" src="img/main/newsDriveContents.jpg" alt=""/>
+            <a href="../sub_tesla/index.html"><span></span></a>
+
+            <div class="news1 .item" data-aos="fade-down">
+               <div class="news1Tx">
+                  <h1>
+                     <img src="img/main/newsTx1.png" alt=""/>
+                  </h1>
+               </div>
+            </div>
+
+            <div class="news2" data-aos="fade-right">
+               <div class="news2Tx">
+                  <h1>
+                     <img src="img/main/newsTx2.png" alt=""/>
+                  </h1>
+                  </h1>
+               </div>
+
+            </div>
+
+            
+            <div class="newsletterWrap .item">
+               <div class="newsletter" data-aos="fade-down">
+                  <h1>
+                     <img src="img/main/newsLetter.png" alt=""/>
+                  </h1>
+                  <h2><input type="email" placeholder="이메일 주소를 입력하십시오"/>
+                     <img src="img/arrow_next_over.png" alt=""/>
+                  </h2>
+               </div>
+            </div>
+
+            <div class="driveCon">
+
+               <img class="driveCar" src="img/main/driveCar.png" alt="" data-aos="fade-left" />
+            </div>
+
+            <div class="driverBtn">
+               <a href="../sub_T-drive/index.html">
+                   <img src="img/button/driveButton.png" alt=""/>
+               </a>
+            </div>
+
+         </div>
+
+      </div>
+      <!--news and drive-->
+
+      <footer>
+         <img src="img/main/footer.jpg" alt=""/>
+      </footer>
+
+        
+      <a id="MOVE_TOP_BTN" href="#"><i class="fa fa-angle-up" style="font-size: 22px; vertical-align: middle;"> </i></a>
+
+   </div><!--id=wrap-->
+
+
+
+   <!-- partial 페이드인 /메인 스크롤버튼 -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js'></script><script  src="js/fade.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+
+  
+</body>
+</html>
+

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>kdw digital diary about me</title>	 
+
+	<link rel="stylesheet" href="./common/css/reset.css" /> 
+	<link rel="stylesheet" href="./common/css/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="./common/lib/sal/sal.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<script src="./common/lib/sal/sal.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="wrap3">
+			<div class="header">
+				<div class="leftLine">-</div>
+				<div id="logo">
+					<a href="./index.html">
+						<img src="./common/img/lgoo.png" alt="" />
+					</a>
+				</div>
+
+				<div class="off-canvas">
+					<div class="off-canvas__background"></div>
+					
+					<aside class="off-canvas__menu">
+					<ul class="off-canvas__menu-top-level">
+						<li>
+							<a href="./sub1.html">
+								<span class="process1">Process</span>
+								<span></span>
+							</a>
+						</li>
+						<li>
+							<a href="./sub2.html">
+								<span>Portfolio</span>
+								<span></span>
+							</a>				
+						</li>
+						<li>
+							<a href="./sub3.html">
+								<span>About Me</span>
+							</a>					
+						</li>
+						<li>
+							<a href="./sub4.html">
+								<span>Experience</span>
+							</a>				
+						</li>
+					</ul>
+					</aside>
+				</div>
+
+				<div class="hamburger" id="toggle">
+					<div class="hamburger__bar"></div>
+				</div>
+			</div>
+
+			<div class="aboutmovie" data-sal="fade">
+				<video width="1920" height="980" autoplay loop muted>
+					<source src="./common/img/sub3/aboutme4.mp4" type="video/mp4" />
+				</video>
+			</div>
+				
+			<div class="aboutText">
+				<div class="aboutTX">
+					<p>TITLE. 나에 대한 순간기록</p>
+					<p>PERSOMAL</p>
+					<span></span>
+					<p>INFORMATION.</p>
+				</div>
+				<img class="aboutmeimg" src="./common/img/sub3/aboutmetext.png" alt="" />
+			</div>
+				
+			<div class="aboutcon">
+				<img class="textCon" src="./common/img/sub3/contents.jpg" alt="" />
+
+				<img class="me_image_1" src="./common/img/sub3/meImg1.jpg" alt="" data-sal="slide-left" data-sal-delay="300" />
+				<img class="me_image_2" src="./common/img/sub3/meImg2.jpg" alt="" data-sal="slide-right" data-sal-delay="400" />
+
+				<div class="linebar">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+
+				<div class="meImg_2">
+					<img src="./common/img/sub3/meImg4.png" alt="" data-sal="fade" data-sal-delay="300"/>
+					<img src="./common/img/sub3/meImg5.png" alt="" data-sal="fade" data-sal-delay="400"/>
+				</div>
+
+				<div class="meImg_3">
+					<img src="./common/img/sub3/meImg3.jpg" alt="" data-sal="slide-left" data-sal-delay="400"/>
+				</div>
+
+				<div class="skillbar">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#"><p id="MOVE_TOP_BTN">TOP</p></a>
+
+	</div>
+
+
+	<script src="./common/js/menu.js"></script>
+	<script>
+		sal();
+		$(function () {
+			var skillBarCheck = [1, 1, 1, 1, 1];
+			$('html, body').scroll(function (e) {
+				var scrollCheck = $(this).scrollTop();
+
+				$('.linebar div').each(function () {
+					var lineTop = $(this).offset().top;
+					if (lineTop < 700) {
+						$(this).animate({'width': '983px'}, 2000);
+					}
+				});
+
+				$('.skillbar div').each(function (i) {
+					var lineTop = $(this).offset().top;
+					var mySkill = ['100', '95', '95', '68', '50'];
+					if (lineTop < 800) {
+						if (skillBarCheck[i] == 1) {
+							skillBarCheck[i] = 0;
+							console.log(mySkill[i]);
+							$(this).stop().animate({'width': mySkill[i]+'%'}, 1000);
+						}
+					}
+				});
+			});
+		});
+
+	</script>
+
+	<script>
+		$(function() {
+			$('html, body').scroll(function (e) {
+				var scrollCheck = $(this).scrollTop();
+				console.log(scrollCheck);
+				if ($(this).scrollTop() > 500) {
+					$('#MOVE_TOP_BTN').fadeIn();
+				} else {
+					$('#MOVE_TOP_BTN').fadeOut();
+				}
+
+			});
+			
+			$("#MOVE_TOP_BTN").click(function() {
+				$('html, body').animate({
+					scrollTop : 0
+				}, 400);
+				return false;
+			});
+		});
+	</script>
+	  
+</body>
+</html>
+
+ 

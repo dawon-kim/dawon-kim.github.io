@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html >
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>dawant</title>	 
+
+	<link rel="stylesheet" href="../../common/css/reset.css" /> 
+	<link rel="stylesheet" href="../../common/css/style.css" />
+	<link rel="stylesheet" href="./common/css/common.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="./common/lib/swiper/swiper.min.js"></script>
+</head>
+
+<style>
+	html {
+	overflow: auto;
+	width: 1920px;
+	}
+	#wrap{
+		width:100%;
+		margin: auto !important;
+		height:100%;
+		position:relative;
+	}
+
+	#wrap .main .background{
+		width:100%;
+		height:980px;
+		background-image:url('./background.jpg');
+		background-repeat:no-repeat;
+		position:relative;
+	}
+
+	#wrap .main .img{
+		width:1600px;
+		height:980px;
+		background-image:url('./main.gif');
+		background-repeat:no-repeat;
+		position:absolute;
+		top:0;
+		transform: translateX(10%);
+	}
+
+	#wrap img{
+		width:100%;
+	}
+	
+</style>
+
+<body>
+	<div id="wrap">
+		<div class="main">
+			<div class="background"></div>
+			<div class="img"></div>
+		</div>
+
+		<img src="dawonat_1.jpg" alt=""/>
+		<img src="1.gif" alt="">
+		<img src="2.gif" alt="">
+		<img src="dawonat_2.jpg" alt=""/>
+
+		<a href="#"><p id="MOVE_TOP_BTN2">TOP</p></a>
+	</div>
+
+	<script>
+		$(function() {
+			$('html, body').scroll(function (e) {
+				var scrollCheck = $(this).scrollTop();
+				console.log(scrollCheck);
+				if ($(this).scrollTop() > 500) {
+					$('#MOVE_TOP_BTN2').fadeIn();
+				} else {
+					$('#MOVE_TOP_BTN2').fadeOut();
+				}
+
+			});
+			
+			$("#MOVE_TOP_BTN2").click(function() {
+				$('html, body').animate({
+					scrollTop : 0
+				}, 400);
+				return false;
+			});
+		});
+	  </script>
+</body>
+</html>
+
